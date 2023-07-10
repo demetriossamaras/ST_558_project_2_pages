@@ -2,39 +2,15 @@
 title: "Project 2"
 author: "Kristina Golden and Demetrios Samaras"
 date: "2023-07-02"
-output: 
-github_document:
-  html_preview: False
+output: github_document
 params: 
   DataChannel: "Lifestyle"
 ---
 
-```{r render with params, eval=FALSE, include=FALSE}
-## creates a list of all 6 desired params from online
-data_channel_is <- c("Lifestyle", "Entertainment", "Business", "Social.Media", "Tech", "World")
-
-output_file <- paste0(data_channel_is, ".html")
-#create a list for each team with just the team name parameter
-params = lapply(data_channel_is, FUN = function(x){list(DataChannel = x)})
-#put into a data frame
-reports <- tibble(output_file, params)
-
-## renders with params to all 
-apply(reports, MARGIN=1, FUN = function(x){
-  
-# rmarkdown::render("C:/Users/Demetri/Documents/NCSU_masters/ST558/Repos/GitHub/ST_558_Project_2/_Rmd/ST_558_Project_2.Rmd", output_dir = "./automations_test2_html", output_file = x[[1]], params = x[[2]]
-                  
-rmarkdown::render('C:/Documents/Github/ST_558_Project_2/_Rmd/ST_558_Project_2.Rmd', output_dir = "./automations_test2_html", output_file = x[[1]], params = x[[2]]
-    )
-  }
-)
-```
 
 ```{r setup , include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, cache = TRUE, message = FALSE)
-#setwd("C:/Documents/Github/ST_558_Project_2")
-#setwd("C:/Users/Demetri/Documents/NCSU_masters/ST558/Repos/GitHub/ST_558_Project_2")
-options(scipen = 1, digits = 6)
+knitr::opts_chunk$set(echo = TRUE, eval = TRUE, message = FALSE)
+
 ```
 
 # `r params$DataChannel`
