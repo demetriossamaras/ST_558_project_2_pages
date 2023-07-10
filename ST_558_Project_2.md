@@ -5795,7 +5795,7 @@ rmarkdown::render(input= "ST_558_Project_2.Rmd",
                   output_format = "github_document", 
                   output_dir = ".", 
                   params = x[[2]],
-                  
+                  output_file = params$DataChannel
                   
     )
   }
