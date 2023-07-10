@@ -48,7 +48,7 @@ In this report we will be looking at the `r params$DataChannel` data channel of 
 
 ## Read in the Data
 
-```{r data, echo=TRUE, message=FALSE, warning=FALSE}
+```{r data, echo=TRUE, eval=TRUE, message=FALSE, warning=FALSE}
 
 
 
