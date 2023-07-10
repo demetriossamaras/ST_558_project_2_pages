@@ -5794,16 +5794,8 @@ apply(reports, MARGIN=1, FUN = function(x){
 rmarkdown::render(input= "ST_558_Project_2.Rmd", 
                   output_format = "github_document", 
                   output_dir = ".", 
-                  output_file = x[[1]], 
                   params = x[[2]],
-                  runtime = "static"
-                  clean = TRUE,
-                  params = NULL,
-  knit_meta = NULL,
-  envir = parent.frame(),
-  run_pandoc = TRUE,
-  quiet = FALSE,
-  encoding = "UTF-8"
+                  
                   
     )
   }
