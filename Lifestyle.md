@@ -5343,7 +5343,7 @@ correlation_graph(data_channel_train)
     ## 1517         Avg.Neg.Pol         Min.Neg.Pol  0.6966795
     ## 1557         Avg.Neg.Pol         Max.Neg.Pol  0.5503891
 
-![](Lifestyle_files/figure-gfm/r%20params$DataChannel%20corr_graph-1.png)<!-- -->
+![](C:/Users/Demetri/Documents/NCSU_masters/ST558/Repos/ST_558_project_2_pages/Lifestyle_files/figure-gfm/r%20params$DataChannel%20corr_graph-1.png)<!-- -->
 
 Because the correlation table above is large, it can be difficult to
 read. The correlation graph above gives a visual summary of the table.
@@ -5455,7 +5455,7 @@ ggplot(shareshigh, aes(x=Rate.Pos, y=Rate.Neg,
     geom_point(size=2)
 ```
 
-![](Lifestyle_files/figure-gfm/scatterplot-1.png)<!-- -->
+![](C:/Users/Demetri/Documents/NCSU_masters/ST558/Repos/ST_558_project_2_pages/Lifestyle_files/figure-gfm/scatterplot-1.png)<!-- -->
 
 Once seeing the correlation table and graph, it is possible to graph two
 variables on a scatterplot. This provides a visual of the linear
@@ -5468,7 +5468,7 @@ ggplot(shareshigh, aes(x = Weekday, fill = shareshigh)) +
   ylab('Relative Frequency')
 ```
 
-![](Lifestyle_files/figure-gfm/weekday%20bar%20graph-1.png)<!-- -->
+![](C:/Users/Demetri/Documents/NCSU_masters/ST558/Repos/ST_558_project_2_pages/Lifestyle_files/figure-gfm/weekday%20bar%20graph-1.png)<!-- -->
 
 ``` r
 ggplot(shareshigh, aes(x = Days_of_Week, fill = shareshigh)) +
@@ -5476,7 +5476,7 @@ ggplot(shareshigh, aes(x = Days_of_Week, fill = shareshigh)) +
   ylab('Relative Frequency')
 ```
 
-![](Lifestyle_files/figure-gfm/day%20of%20the%20week%20graph-1.png)<!-- -->
+![](C:/Users/Demetri/Documents/NCSU_masters/ST558/Repos/ST_558_project_2_pages/Lifestyle_files/figure-gfm/day%20of%20the%20week%20graph-1.png)<!-- -->
 
 The above bar graphs are a visual representation of the contingency
 tables between weekends/weekdays and shareshigh and the days of the week
@@ -5524,7 +5524,7 @@ a <- ggplot(data_channel_train, aes(x=shares))
 a+geom_histogram(color= "red", fill="blue")+ ggtitle("Shares histogram")
 ```
 
-![](Lifestyle_files/figure-gfm/shares%20histogram-1.png)<!-- -->
+![](C:/Users/Demetri/Documents/NCSU_masters/ST558/Repos/ST_558_project_2_pages/Lifestyle_files/figure-gfm/shares%20histogram-1.png)<!-- -->
 
 Above we can see the frequency distribution of shares of the Lifestyle
 data channel. We should always see a long tail to the right because a
@@ -5540,7 +5540,7 @@ b<- ggplot(data_channel_train, aes(x=n.Title, y=shares))
 b+ geom_col(fill="blue")+ ggtitle("Number of words in title vs shares") + labs(x="Number of words in title")
 ```
 
-![](Lifestyle_files/figure-gfm/col%20graph-1.png)<!-- -->
+![](C:/Users/Demetri/Documents/NCSU_masters/ST558/Repos/ST_558_project_2_pages/Lifestyle_files/figure-gfm/col%20graph-1.png)<!-- -->
 
 In the above graph we are looking at the number of shares based on how
 many words are in the title of the article. if we see a large peak on at
@@ -5601,7 +5601,7 @@ g <-ggplot(data_channel_train,  aes(y=shares, x= data_channel_train[[highest_cor
 g+ geom_point(aes(color=as.factor(Weekend))) +geom_smooth(method = lm) + ggtitle(" Highest correlated variable with shares") + labs(x="Highest correlated variable vs shares", color="Weekend")
 ```
 
-![](Lifestyle_files/figure-gfm/graph%20of%20shares%20with%20highest%20correlated%20var-1.png)<!-- -->
+![](C:/Users/Demetri/Documents/NCSU_masters/ST558/Repos/ST_558_project_2_pages/Lifestyle_files/figure-gfm/graph%20of%20shares%20with%20highest%20correlated%20var-1.png)<!-- -->
 
 The above graph looks at the relationship between shares and the
 variable with the highest correlation for the Lifestyle data channel,
@@ -5732,7 +5732,7 @@ gbm_tree_cv <- train(shares ~ . , data = data_channel_train,
 plot(gbm_tree_cv)
 ```
 
-![](Lifestyle_files/figure-gfm/boosted%20tree%20tuning-1.png)<!-- -->
+![](C:/Users/Demetri/Documents/NCSU_masters/ST558/Repos/ST_558_project_2_pages/Lifestyle_files/figure-gfm/boosted%20tree%20tuning-1.png)<!-- -->
 
 ``` r
 ## test set prediction
